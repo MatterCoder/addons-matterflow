@@ -1,7 +1,7 @@
 {
-  "name": "Example Home Assistant add-on repository",
+  "name": "Matterflow Home Assistant add-on repository",
   "image": "ghcr.io/home-assistant/devcontainer:addons",
-  "appPort": ["7123:8123", "7357:4357"],
+  "appPort": ["4173:4173", "4173:5173", "8000:8000", "9001:9001"],
   "postStartCommand": "bash devcontainer_bootstrap",
   "runArgs": ["-e", "GIT_EDITOR=code --wait", "--privileged"],
   "remoteUser":"root",
